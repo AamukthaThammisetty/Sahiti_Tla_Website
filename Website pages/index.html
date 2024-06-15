@@ -32,7 +32,7 @@
 	<meta name="description" content="Sahiti | Telugu Literary Association of VIT Vellore">
 	<meta name="twitter:site" content="">
 
-
+    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="style.css?version=5">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
@@ -42,12 +42,116 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171588218-1"></script>
+
+<style>
+    /* CSS Styles for Sponsor Scrolling */
+
+    .our-sponsor-area {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        background: none; 
+        border: none; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .marquee {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+        white-space: nowrap;
+        background-color: transparent;
+    }
+
+    .marquee-content {
+        display: flex;
+        flex-shrink: 0; 
+        animation: marquee 30s linear infinite;
+    }
+
+    @keyframes marquee {
+        0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+    }
+
+    .single-sponsor {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 30px; 
+    }
+
+    .single-sponsor img {
+        max-height: 50px; 
+        border: none; 
+        vertical-align: middle; 
+    }
+    .marquee-content:hover {
+        animation-play-state: paused;
+    }
+</style>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-171588218-1');
+</script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var swiper = new Swiper('.yt-vedios .swiper-container', {
+            loop: true, 
+            autoplay: {
+                delay: 3000, 
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            slidesPerView: 1, 
+            spaceBetween: 30, 
+            effect: 'slide', 
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+            },
+            fadeEffect: {
+                crossFade: true
+            },
+            on: {
+                init: function () {
+                    
+                }
+            }
+        });
+    });
 </script>
 
 <script>
@@ -125,7 +229,7 @@
   
     <section class="welcome-area">
         <div class="welcome-slides owl-carousel">
-                <div class="single-welcome-slide bg-img  jarallax" style="background-image: url(Photos/background/c.jpg);">
+                <div class="single-welcome-slide bg-img   jarallax" style="background-image: url(Photos/background/c.jpg);">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
@@ -447,40 +551,71 @@
 
             <div class="row">
                 <div class="col-12">
-                    <div class="our-sponsor-area d-flex flex-wrap">                 
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="Photos/Sponsors/pepsi.png" alt=""></a>
-                        </div>             
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="Photos/Sponsors/asp.png" alt=""></a>
-                        </div>                     
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="Photos/Sponsors/spiro.png" alt=""></a>
-                        </div>                      
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="Photos/Sponsors/creamo.png" alt=""></a>
-                        </div>                     
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="Photos/Sponsors/kanna.png" alt=""></a>
-                        </div>
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="Photos/Sponsors/abhi-bus.png" alt=""></a>
-                        </div>
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="Photos/Sponsors/benzz.svg" alt=""></a>
-                        </div>
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="Photos/Sponsors/create-1.png" alt=""></a>
-                        </div>
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="Photos/Sponsors/chef-1.png" alt=""></a>
-                        </div>
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="Photos/Sponsors/swagath-1.png" alt=""></a>
+                    <div class="our-sponsor-area">
+                        <div class="marquee">
+                            <div class="marquee-content">
+                                <div class="single-sponsor">
+                                    <a href="#"><img src="Photos/Sponsors/SPONSERS (1)/SPONSERS/NEW/AVA INTERN.png" alt="AVA INTERN"></a>
+                                </div>
+                                <div class="single-sponsor">
+                                    <a href="#"><img src="Photos/Sponsors/SPONSERS (1)/SPONSERS/NEW/HIGH_JOINT.png" alt="HIGH JOINT"></a>
+                                </div>
+                                <div class="single-sponsor">
+                                    <a href="#"><img src="Photos/Sponsors/SPONSERS (1)/SPONSERS/NEW/LOYAL DREAMS.png" alt="LOYAL DREAMS"></a>
+                                </div>
+                                <div class="single-sponsor">
+                                    <a href="#"><img src="Photos/Sponsors/SPONSERS (1)/SPONSERS/NEW/Z3.png" alt="Z3"></a>
+                                </div>
+                                <div class="single-sponsor">
+                                    <a href="#"><img src="Photos/Sponsors/SPONSERS (1)/SPONSERS/OLD/ALAKAR.png" alt="ALAKAR"></a>
+                                </div>
+                                <div class="single-sponsor">
+                                    <a href="#"><img src="Photos/Sponsors/SPONSERS (1)/SPONSERS/OLD/AROMAS.png" alt="AROMAS"></a>
+                                </div>
+                                <div class="single-sponsor">
+                                    <a href="#"><img src="Photos/Sponsors/SPONSERS (1)/SPONSERS/OLD/INDIAN_BANK.png" alt="INDIAN BANK"></a>
+                                </div>
+                                <div class="single-sponsor">
+                                    <a href="#"><img src="Photos/Sponsors/SPONSERS (1)/SPONSERS/OLD/REGENCY.png" alt="REGENCY"></a>
+                                </div>
+                                <div class="single-sponsor">
+                                    <a href="#"><img src="Photos/Sponsors/asp.png" alt="ASP"></a>
+                                </div>
+                                <div class="single-sponsor ">
+                                    <a href="#"><img src="Photos/Sponsors/pepsi.png" alt=""></a>
+                                </div>             
+                                                
+                                <div class="single-sponsor">
+                                    <a href="#"><img src="Photos/Sponsors/spiro.png" alt=""></a>
+                                </div>                      
+                                <div class="single-sponsor ">
+                                    <a href="#"><img src="Photos/Sponsors/creamo.png" alt=""></a>
+                                </div>                     
+                                <div class="single-sponsor" >
+                                    <a href="#"><img src="Photos/Sponsors/kanna.png" alt=""></a>
+                                </div>
+                                <div class="single-sponsor" >
+                                    <a href="#"><img src="Photos/Sponsors/abhi-bus.png" alt=""></a>
+                                </div>
+                                <div class="single-sponsor" >
+                                    <a href="#"><img src="Photos/Sponsors/benzz.svg" alt=""></a>
+                                </div>
+                                <div class="single-sponsor">
+                                    <a href="#"><img src="Photos/Sponsors/create-1.png" alt=""></a>
+                                </div>
+                                <div class="single-sponsor" >
+                                    <a href="#"><img src="Photos/Sponsors/chef-1.png" alt=""></a>
+                                </div>
+                                <div class="single-sponsor" >
+                                    <a href="#"><img src="Photos/Sponsors/swagath-1.png" alt=""></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            
         </div>
     </section>
     
@@ -546,7 +681,7 @@
             </div>
           </div> -->
           <div class="yt-vedios">
-            <div class="swiper-container">
+            <div class="swiper-container ">
               <div class="swiper-wrapper">
                 <div class="swiper-slide wow fadeInLeft" data-wow-delay="300ms">
                     <div class="card" style="background-color: transparent;">
@@ -588,6 +723,61 @@
                         </a>
                     </div>
                 </div>
+                
+
+                <div class="swiper-slide wow fadeInLeft" data-wow-delay="300ms">
+                    <div class="card" style="background-color: transparent;">
+                        <a href="https://www.youtube.com/watch?v=esYnv6DKqr0" target="_blank">
+                        <img class="card-img-top"  src="Photos/utube/ma_ma_mahesha.jpg" alt="After Movie 2K20">
+                        <div class="card-body">
+                            <p class="utube-text card-text" >Ma Ma Mahesha Dance Cover</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide wow fadeInLeft" data-wow-delay="300ms">
+                    <div class="card" style="background-color: transparent;">
+                        <a href="https://www.youtube.com/watch?v=lIlYSYwyDo4" target="_blank">
+                        <img class="card-img-top"  src="Photos/utube/Types_of _guys (1).jpg" alt="After Movie 2K20">
+                        <div class="card-body">
+                            <p class="utube-text card-text" >Types of guys we meet</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide wow fadeInLeft" data-wow-delay="300ms">
+                    <div class="card" style="background-color: transparent;">
+                        <a href="https://www.youtube.com/watch?v=tFSl_gCBHNE" target="_blank">
+                        <img class="card-img-top"  src="Photos/utube/coka_cola.jpg" alt="After Movie 2K20">
+                        <div class="card-body">
+                            <p class="utube-text card-text" >Coka 2.0</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide wow fadeInLeft" data-wow-delay="300ms">
+                    <div class="card" style="background-color: transparent;">
+                        <a href="https://www.youtube.com/watch?v=ktpfq4Oqdcs" target="_blank">
+                        <img class="card-img-top"  src="Photos/utube/Ranu_ranu.jpg" alt="After Movie 2K20">
+                        <div class="card-body">
+                            <p class="utube-text card-text" >Raanu Raanu Dance Cover </p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide wow fadeInLeft" data-wow-delay="300ms">
+                    <div class="card" style="background-color: transparent;">
+                        <a href="https://www.youtube.com/watch?v=ktpfq4Oqdcs" target="_blank">
+                        <img class="card-img-top"  src="Photos/utube/nijamene.jpg" alt="After Movie 2K20">
+                        <div class="card-body">
+                            <p class="utube-text card-text" >Nijama Ne Chebutunna</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
                 <div class="swiper-slide wow fadeInLeft" data-wow-delay="300ms">
                     <div class="card" style="background-color: transparent;">
                         <a href="https://youtu.be/Ana_kgzNJZo" target="_blank">
@@ -651,6 +841,9 @@
               </div>
               <!-- Add Pagination -->
               <div class="swiper-pagination wow fadeInRight" data-wow-delay="1100ms"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              
             </div>
           </div>
 </section>
