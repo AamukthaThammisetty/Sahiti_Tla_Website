@@ -640,7 +640,7 @@ input:required {
     -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
     box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15); }
     .header-area.sticky .classy-navbar {
-      height: 75px; }
+      height: 50px; }
 
 /* :: 8.0 Hero Area CSS */
 .welcome-area {
@@ -1999,13 +1999,13 @@ input:required {
   z-index: 1;
   width: 100%; }
   .our-sponsor-area .single-sponsor {
- 
+    /* border: 1px solid #444675; */
     -webkit-box-flex: 0;
     -ms-flex: 0 0 20%;
     flex: 0 0 20%;
-    max-width: 10%;
-    width: 10%;
-    height: 100px;
+    max-width: 20%;
+    width: 20%;
+    height: 200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2015,6 +2015,7 @@ input:required {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    margin-left: -1px;
     margin-top: -1px; 
 }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {

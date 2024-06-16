@@ -37,67 +37,62 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171588218-1"></script>
 
 <style>
-    /* CSS Styles for Sponsor Scrolling */
-
+    .container {
+        padding-top: 20px; 
+    }
     .our-sponsor-area {
         overflow: hidden;
         position: relative;
         width: 100%;
-        background: none; 
-        border: none; 
+        background: none;
+        border: none;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 10px 0;
     }
 
-    .marquee {
+    .marquee-left,
+    .marquee-right {
         display: flex;
         align-items: center;
-        overflow: hidden;
-        width: 100%;
-        white-space: nowrap;
+        width: 200%; 
+        animation: marquee 30s linear infinite; 
         background-color: transparent;
     }
 
-    .marquee-content {
-        display: flex;
-        flex-shrink: 0; 
-        animation: marquee 30s linear infinite;
-    }
-
-    @keyframes marquee {
-        0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-    }
-
-    .single-sponsor {
+    .marquee-left .single-sponsor,
+    .marquee-right .single-sponsor {
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        padding-right: 30px; 
+        padding-right: 30px;
     }
 
-    .single-sponsor img {
-        max-height: 50px; 
-        border: none; 
-        vertical-align: middle; 
+    .marquee-left .single-sponsor img,
+    .marquee-right .single-sponsor img {
+        max-height: 50px;
+        border: none;
+        vertical-align: middle;
     }
-    .marquee-content:hover {
-        animation-play-state: paused;
+    @keyframes marquee {
+        0% {
+            transform: translateX(0); 
+        }
+        100% {
+            transform: translateX(-100%); 
+        }
+    }
+    .marquee-right {
+        animation-direction: reverse; 
     }
 </style>
+
+
 
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -125,9 +120,9 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-            slidesPerView: 1, 
-            spaceBetween: 30, 
-            effect: 'slide', 
+            slidesPerView: 1, // Number of slides per view
+            spaceBetween: 30, // Space between slides in px
+            effect: 'slide', // Slide transition effect
             breakpoints: {
                 640: {
                     slidesPerView: 2,
@@ -147,7 +142,7 @@
             },
             on: {
                 init: function () {
-                    
+                    // Custom function or animations on initialization
                 }
             }
         });
@@ -549,71 +544,85 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-12">
-                    <div class="our-sponsor-area">
-                        <div class="marquee">
-                            <div class="marquee-content">
-                                <div class="single-sponsor">
-                                    <a href="#"><img src="Photos/Sponsors/SPONSERS (1)/SPONSERS/NEW/AVA INTERN.png" alt="AVA INTERN"></a>
+            <div class="container">
+                <!-- First row with left-to-right marquee -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="our-sponsor-area">
+                            <div class="marquee-left">
+                                <!-- Images for left-to-right marquee -->
+                                <div class="single-sponsor" style="width: 300px; height: 200px; margin: 10px; border: 2px solid #ccc; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                    <a href="#"><img src="Photos/Sponsors/SPONSERS (1)/SPONSERS/NEW/AVA INTERN.png" style="width: 200px; height: 200px; object-fit: cover; " alt="AVA INTERN"></a>
                                 </div>
-                                <div class="single-sponsor">
-                                    <a href="#"><img src="Photos/Sponsors/SPONSERS (1)/SPONSERS/NEW/HIGH_JOINT.png" alt="HIGH JOINT"></a>
+                                <div class="single-sponsor" style="width: 300px; height: 200px; margin: 10px; border: 2px solid #ccc; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                    <a href="#"><img src="Photos/Sponsors/SPONSERS (1)/SPONSERS/NEW/HIGH_JOINT.png" style="width: 200px; height: 200px; object-fit: cover;" alt="HIGH JOINT"></a>
                                 </div>
-                                <div class="single-sponsor">
-                                    <a href="#"><img src="Photos/Sponsors/SPONSERS (1)/SPONSERS/NEW/LOYAL DREAMS.png" alt="LOYAL DREAMS"></a>
+                                <div class="single-sponsor" style="width:500px; height: 200px; margin: 10px; border: 2px solid #ccc; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                    <a href="#"><img src="Photos/Sponsors/SPONSERS (1)/SPONSERS/NEW/LOYAL DREAMS.png" style="width: 400px; height: 200px;" alt="LOYAL DREAMS"></a>
                                 </div>
-                                <div class="single-sponsor">
-                                    <a href="#"><img src="Photos/Sponsors/SPONSERS (1)/SPONSERS/NEW/Z3.png" alt="Z3"></a>
+                                <div class="single-sponsor" style="width: 300px; height: 200px; margin: 10px; border: 2px solid #ccc; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                    <a href="#"><img src="Photos/Sponsors/SPONSERS (1)/SPONSERS/NEW/Z3.png" style="width: 200px; height: 200px;object-fit: cover; " alt="Z3"></a>
                                 </div>
-                                <div class="single-sponsor">
-                                    <a href="#"><img src="Photos/Sponsors/SPONSERS (1)/SPONSERS/OLD/ALAKAR.png" alt="ALAKAR"></a>
+                                <div class="single-sponsor" style="width: 300px; height: 200px; margin: 10px; border: 2px solid #ccc; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                    <a href="#"><img src="Photos/Sponsors/SPONSERS (1)/SPONSERS/OLD/ALAKAR.png" style="width: 200px; height: 200px; object-fit: cover;" alt="ALAKAR"></a>
                                 </div>
-                                <div class="single-sponsor">
-                                    <a href="#"><img src="Photos/Sponsors/SPONSERS (1)/SPONSERS/OLD/AROMAS.png" alt="AROMAS"></a>
+                                <div class="single-sponsor" style="width: 300px; height: 200px; margin: 10px; border: 2px solid #ccc; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                    <a href="#"><img src="Photos/Sponsors/SPONSERS (1)/SPONSERS/OLD/AROMAS.png" style="width: 200px; height: 200px; object-fit: cover; " alt="AROMAS"></a>
                                 </div>
-                                <div class="single-sponsor">
-                                    <a href="#"><img src="Photos/Sponsors/SPONSERS (1)/SPONSERS/OLD/INDIAN_BANK.png" alt="INDIAN BANK"></a>
+                                <div class="single-sponsor" style="width: 300px; height: 200px; margin: 10px; border: 2px solid #ccc; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                    <a href="#"><img src="Photos/Sponsors/SPONSERS (1)/SPONSERS/OLD/INDIAN_BANK.png" style="width: 300px; height: 200px;" alt="INDIAN BANK"></a>
                                 </div>
-                                <div class="single-sponsor">
-                                    <a href="#"><img src="Photos/Sponsors/SPONSERS (1)/SPONSERS/OLD/REGENCY.png" alt="REGENCY"></a>
+                                <div class="single-sponsor" style="width: 300px; height: 200px; margin: 10px; border: 2px solid #ccc; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                    <a href="#"><img src="Photos/Sponsors/SPONSERS (1)/SPONSERS/OLD/REGENCY.png" style="width: 200px; height: 200px;object-fit: cover; " alt="REGENCY"></a>
                                 </div>
-                                <div class="single-sponsor">
-                                    <a href="#"><img src="Photos/Sponsors/asp.png" alt="ASP"></a>
+                                <div class="single-sponsor" style="width: 300px; height: 200px; margin: 10px; border: 2px solid #ccc; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                    <a href="#"><img src="Photos/Sponsors/asp.png" style="width: 300px; height: 300px;object-fit: cover; border-radius: 10px;" alt="ASP"></a>
                                 </div>
-                                <div class="single-sponsor ">
-                                    <a href="#"><img src="Photos/Sponsors/pepsi.png" alt=""></a>
-                                </div>             
-                                                
-                                <div class="single-sponsor">
-                                    <a href="#"><img src="Photos/Sponsors/spiro.png" alt=""></a>
-                                </div>                      
-                                <div class="single-sponsor ">
-                                    <a href="#"><img src="Photos/Sponsors/creamo.png" alt=""></a>
-                                </div>                     
-                                <div class="single-sponsor" >
-                                    <a href="#"><img src="Photos/Sponsors/kanna.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Second row with right-to-left marquee -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="our-sponsor-area">
+                            <div class="marquee-right">
+                                <!-- Images for right-to-left marquee -->
+                                <div class="single-sponsor" style="width: 300px; height: 200px; margin: 10px; border: 2px solid #ccc; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                    <a href="#"><img src="Photos/Sponsors/pepsi.png" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;" alt="Pepsi"></a>
                                 </div>
-                                <div class="single-sponsor" >
-                                    <a href="#"><img src="Photos/Sponsors/abhi-bus.png" alt=""></a>
+                                <div class="single-sponsor" style="width: 300px; height: 200px; margin: 10px; border: 2px solid #ccc; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                    <a href="#"><img src="Photos/Sponsors/spiro.png" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;" alt="Spiro"></a>
                                 </div>
-                                <div class="single-sponsor" >
-                                    <a href="#"><img src="Photos/Sponsors/benzz.svg" alt=""></a>
+                                <div class="single-sponsor" style="width: 300px; height: 200px; margin: 10px; border: 2px solid #ccc; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                    <a href="#"><img src="Photos/Sponsors/creamo.png" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;" alt="Creamo"></a>
                                 </div>
-                                <div class="single-sponsor">
-                                    <a href="#"><img src="Photos/Sponsors/create-1.png" alt=""></a>
+                                <div class="single-sponsor" style="width: 300px; height: 200px; margin: 10px; border: 2px solid #ccc; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                    <a href="#"><img src="Photos/Sponsors/kanna.png" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;" alt="Kanna"></a>
                                 </div>
-                                <div class="single-sponsor" >
-                                    <a href="#"><img src="Photos/Sponsors/chef-1.png" alt=""></a>
+                                <div class="single-sponsor" style="width: 300px; height: 200px; margin: 10px; border: 2px solid #ccc; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                    <a href="#"><img src="Photos/Sponsors/abhi-bus.png" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;" alt="Abhi Bus"></a>
                                 </div>
-                                <div class="single-sponsor" >
-                                    <a href="#"><img src="Photos/Sponsors/swagath-1.png" alt=""></a>
+                                <div class="single-sponsor" style="width: 300px; height: 200px; margin: 10px; border: 2px solid #ccc; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                    <a href="#"><img src="Photos/Sponsors/benzz.svg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;" alt="Benzz"></a>
+                                </div>
+                                <div class="single-sponsor" style="width: 300px; height: 200px; margin: 10px; border: 2px solid #ccc; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                    <a href="#"><img src="Photos/Sponsors/create-1.png" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;" alt="Create"></a>
+                                </div>
+                                <div class="single-sponsor" style="width: 300px; height: 200px; margin: 10px; border: 2px solid #ccc; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                    <a href="#"><img src="Photos/Sponsors/chef-1.png" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;" alt="Chef"></a>
+                                </div>
+                                <div class="single-sponsor" style="width: 300px; height: 200px; margin: 10px; border: 2px solid #ccc; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                    <a href="#"><img src="Photos/Sponsors/swagath-1.png" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;" alt="Swagath"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            
             
             
         </div>
