@@ -95,10 +95,19 @@ rightBtnn.addEventListener('mouseleave', stopMovement);
 //Start this baby up
 (function init() {
 	var images = [
-		'Photos/chitram/1.jpeg',
-		'Photos/chitram/2.jpeg',
-		'Photos/chitram/3.jpeg',
-		'Photos/chitram/4.jpeg',
+		'Photos/chitram/1.jpg',
+		'Photos/chitram/2.jpg',
+		'Photos/chitram/3.jpg',
+		'Photos/chitram/4.jpg',
+		'Photos/chitram/5.jpg',
+		'Photos/chitram/6.jpg',
+		'Photos/chitram/7.jpeg',
+		'Photos/chitram/8.jpeg',
+		'Photos/chitram/9.jpeg',
+		'Photos/chitram/10.jpeg',
+		'Photos/chitram/11.jpeg',
+
+
 
 	];
 	
