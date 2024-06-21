@@ -102,10 +102,10 @@ rightBtnn.addEventListener('mouseleave', stopMovement);
 		'Photos/chitram/5.jpg',
 		'Photos/chitram/6.jpg',
 		'Photos/chitram/7.jpeg',
-		'Photos/chitram/8.jpeg',
-		'Photos/chitram/9.jpeg',
-		'Photos/chitram/10.jpeg',
-		'Photos/chitram/11.jpeg',
+		'Photos/chitram/8.jpg',
+		'Photos/chitram/9.jpg',
+		'Photos/chitram/10.jpg',
+		'Photos/chitram/11.jpg',
 
 
 
