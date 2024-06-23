@@ -2,20 +2,15 @@ var gallery = document.querySelector('.gallery');
 var galleryItems = document.querySelectorAll('.gallery-item');
 var numOfItems = gallery.children.length;
 var itemWidth = 23; // percent: as set in css
-
 var featured = document.querySelector('.featured-item');
-
 var leftBtnn = document.querySelector('.move-btnn.left');
 var rightBtnn = document.querySelector('.move-btnn.right');
 var leftInterval;
 var rightInterval;
-
 var scrollRate = 0.2;
 var left;
-
 function selectItem(e) {
 	if (e.target.classList.contains('active')) return;
-	
 	featured.style.backgroundImage = e.target.style.backgroundImage;
 	
 	for (var i = 0; i < galleryItems.length; i++) {
@@ -106,9 +101,6 @@ rightBtnn.addEventListener('mouseleave', stopMovement);
 		'Photos/chitram/9.jpg',
 		'Photos/chitram/10.jpg',
 		'Photos/chitram/11.jpg',
-
-
-
 	];
 	
 	//Set Initial Featured Image
