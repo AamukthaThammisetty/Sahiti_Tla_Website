@@ -120,7 +120,7 @@ const carousel1 = new Carousel('.chitram1', '.chitram-item1', '.chitram-featured
 ]);
 
 const carousel2 = new Carousel('.chitram2', '.chitram-item2', '.chitram-featured2', '.chitram-btn2.left', '.chitram-btn2.right', [
-
+	"Photos/chitram/chitram2023_10.webp",
 	"Photos/chitram/chitram2023_1.webp",
 	"Photos/chitram/chitram2023_2.webp",
 	"Photos/chitram/chitram2023_3.webp",
@@ -130,7 +130,7 @@ const carousel2 = new Carousel('.chitram2', '.chitram-item2', '.chitram-featured
 	"Photos/chitram/chitram2023_7.webp",
 	"Photos/chitram/chitram2023_8.webp",
 	"Photos/chitram/chitram2023_9.webp",
-	"Photos/chitram/chitram2023_10.webp",
+	
 	
 	
 	// Add more images as needed

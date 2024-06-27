@@ -104,6 +104,20 @@ class Carousel {
 
 
 const carousel1 = new Carousel('.antha', '.antha-item', '.antha-featured', '.antha-btn1.left', '.antha-btn1.right', [
+	'Photos/antha/antha2023_6.webp',
+	'Photos/antha/antha2023_7.webp',
+	'Photos/antha/antha2023_1.webp',
+	'Photos/antha/antha2023_2.webp',
+	'Photos/antha/antha2023_3.webp',
+	'Photos/antha/antha2023_4.webp',
+	'Photos/antha/antha2023_5.webp',
+	'Photos/antha/antha2023_8.webp',
+	'Photos/antha/antha2023_9.webp',
+	'Photos/antha/antha2023_10.webp',
+]);
+
+const carousel2 = new Carousel('.antha2', '.antha-item2', '.antha-featured2', '.antha-btn2.left', '.antha-btn2.right', [
+
 	'Photos/antha/1.jpeg',
 	'Photos/antha/2.jpeg',
 	'Photos/antha/3.jpeg',
@@ -113,19 +127,5 @@ const carousel1 = new Carousel('.antha', '.antha-item', '.antha-featured', '.ant
 	'Photos/antha/7.jpeg',
 	'Photos/antha/8.jpeg',
 	'Photos/antha/9.jpeg'
-]);
-
-const carousel2 = new Carousel('.antha2', '.antha-item2', '.antha-featured2', '.antha-btn2.left', '.antha-btn2.right', [
-
-	'Photos/antha/antha2023_1.webp',
-	'Photos/antha/antha2023_2.webp',
-	'Photos/antha/antha2023_3.webp',
-	'Photos/antha/antha2023_4.webp',
-	'Photos/antha/antha2023_5.webp',
-	'Photos/antha/antha2023_6.webp',
-	'Photos/antha/antha2023_7.webp',
-	'Photos/antha/antha2023_8.webp',
-	'Photos/antha/antha2023_9.webp',
-	'Photos/antha/antha2023_10.webp',
 ]);
 
