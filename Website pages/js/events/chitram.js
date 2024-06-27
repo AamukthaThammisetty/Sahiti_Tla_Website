@@ -12,7 +12,6 @@ class Carousel {
 		this.leftInterval = null;
 		this.scrollRate = 0.2;
 		this.left = 0;
-
 		this.init();
 	}
 
@@ -105,6 +104,10 @@ class Carousel {
 
 
 const carousel1 = new Carousel('.chitram1', '.chitram-item1', '.chitram-featured1', '.chitram-btn1.left', '.chitram-btn1.right', [
+	'Photos/chitram/8.jpg',
+	'Photos/chitram/9.jpg',
+	'Photos/chitram/10.jpg',
+	'Photos/chitram/11.JPG',
 	'Photos/chitram/1.jpg',
 	'Photos/chitram/2.jpg',
 	'Photos/chitram/3.jpg',
@@ -112,15 +115,30 @@ const carousel1 = new Carousel('.chitram1', '.chitram-item1', '.chitram-featured
 	'Photos/chitram/5.jpg',
 	'Photos/chitram/6.jpg',
 	'Photos/chitram/7.jpeg',
-	'Photos/chitram/8.jpg',
-
+	
 	// Add more images as needed
 ]);
 
 const carousel2 = new Carousel('.chitram2', '.chitram-item2', '.chitram-featured2', '.chitram-btn2.left', '.chitram-btn2.right', [
 
-	'Photos/chitram/9.jpg',
-	'Photos/chitram/10.jpg',
-	'Photos/chitram/11.jpg',
+	"Photos/chitram/chitram2023_1.webp",
+	"Photos/chitram/chitram2023_2.webp",
+	"Photos/chitram/chitram2023_3.webp",
+	"Photos/chitram/chitram2023_4.webp",
+	"Photos/chitram/chitram2023_5.webp",
+	"Photos/chitram/chitram2023_6.webp",
+	"Photos/chitram/chitram2023_7.webp",
+	"Photos/chitram/chitram2023_8.webp",
+	"Photos/chitram/chitram2023_9.webp",
+	"Photos/chitram/chitram2023_10.webp",
+	
+	
 	// Add more images as needed
+]);
+const carousel3 = new Carousel('.chitram3', '.chitram-item3', '.chitram-featured3', '.chitram-btn3.left', '.chitram-btn3.right', [
+	'Photos/chitram/1.jpeg',
+	'Photos/chitram/2.jpeg',
+	'Photos/chitram/3.jpeg',
+	'Photos/chitram/4.jpeg',
+	'Photos/chitram/2.jpeg',
 ]);
